@@ -2,7 +2,15 @@ import React from 'react'
 import arrowleftfill from '../assets/arrowleftfill.svg'
 import arrowrightfill from '../assets/arrowrightfill.svg'
 import Item from './Item'
-import console from '../assets/console.png'
+import dogfood from '../assets/dogfood.png'
+import camera from '../assets/camera.png'
+import laptop from '../assets/laptop.png'
+import cream from '../assets/cream.png'
+import kidscar from '../assets/laptop.png'
+import soccerboots from '../assets/laptop.png'
+import gp11console from '../assets/laptop.png'
+import jacket from '../assets/laptop.png'
+
 
 const OurProducts = () => {
   return (
@@ -30,75 +38,59 @@ const OurProducts = () => {
 
             <div className='grid grid-cols-none justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4'>
                 <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='HAVIT HV-G92 Gamepad'
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
+                 img={dogfood}
+                 alt='Dog food'
+                 name='Breed Dry Dog Food'
+                 newPrice='$100'
                  ratings='88'/>
                 <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='AK-900 Wired Keyboard'
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
+                 img={camera}
+                 alt='Camera'
+                 name='CANON EOS DSLR Camera'
+                 newPrice='$360'
+                 ratings='95'/>
+
+                <Item
+                 img={laptop}
+                 alt='ASUS FHD Gaming Laptop'
+                 name='ASUS FHD Gaming Laptop'
+                 newPrice='$700'
+                 ratings='325'/>
+
+                <Item
+                 img={cream}
+                 alt='cream'
+                 name='Curology Product Set'
+                 newPrice='$500'
+                 ratings='145'/>
+
+                <Item
+                 img={kidscar}
+                 alt='Kids car'
+                 name='Kids Electric Car'
+                 newPrice='$960'
                  ratings='88'/>
 
                 <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='IPS LCD Gaming Monitor'
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
-                 ratings='88'/>
+                 img={soccerboots}
+                 alt='Soccer boots'
+                 name='Jr. Zoom Soccer Cleats'
+                 newPrice='$1160'
+                 ratings='35'/>
 
                 <Item
-                 img={console}
+                 img={gp11console}
                  alt='Gamepad'
-                 name='S-Series Comfort Chair '
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
-                 ratings='88'/>
-
-                <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='S-Series Comfort Chair '
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
-                 ratings='88'/>
-
-                <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='S-Series Comfort Chair '
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
-                 ratings='88'/>
-
-                <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='S-Series Comfort Chair '
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
-                 ratings='88'/>
+                 name='G11 Shooter USB Gamepad'
+                 newPrice='$960'
+                 ratings='55'/>
 
                  <Item
-                 img={console}
-                 alt='Gamepad'
-                 name='S-Series Comfort Chair '
-                 newPrice='$120'
-                 oldPrice='$160'
-                 discount='40%'
-                 ratings='88'/>
+                 img={jacket}
+                 alt='Jacket'
+                 name='Quilted Satin Jacket'
+                 newPrice='$660'
+                 ratings='55'/>
             </div>
 
             <div className='self-center justify-self-center'>

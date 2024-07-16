@@ -1,6 +1,7 @@
 import React from 'react'
 import bookshelf from '../assets/bookshelf.png'
 import cpucooler from '../assets/cpucooler.png'
+import bag from '../assets/bag.png'
 import Item from './Item'
 import console from '../assets/console.png'
 
@@ -33,40 +34,29 @@ const BestSelling = () => {
      discount='40%'
      ratings='88'/>
     <Item
-     img={console}
-     alt='Gamepad'
-     name='AK-900 Wired Keyboard'
-     newPrice='$120'
-     oldPrice='$160'
-     discount='40%'
-     ratings='88'/>
-
-    <Item
-     img={console}
-     alt='Gamepad'
-     name='IPS LCD Gaming Monitor'
-     newPrice='$120'
-     oldPrice='$160'
-     discount='40%'
-     ratings='88'/>
-
-    <Item
-     img={bookshelf}
-     alt='Gamepad'
-     name='S-Series Comfort Chair '
-     newPrice='$120'
-     oldPrice='$160'
-     discount='40%'
-     ratings='88'/>
+     img={bag}
+     alt='Gucci bag'
+     name='Gucci duffle bag'
+     newPrice='$960'
+     oldPrice='$1160'
+     ratings='65'/>
 
     <Item
      img={cpucooler}
-     alt='Gamepad'
-     name='S-Series Comfort Chair '
-     newPrice='$120'
-     oldPrice='$160'
+     alt='CPU Cooler'
+     name='RGB liquid CPU Cooler'
+     newPrice='$160'
+     oldPrice='$170'
      discount='40%'
-     ratings='88'/>
+     ratings='65'/>
+
+    <Item
+     img={bookshelf}
+     alt='Book shelf'
+     name='Small BookShelf'
+     newPrice='$360'
+     ratings='65'/>
+
 </div>
 
 </div>

@@ -1,5 +1,8 @@
 import React from 'react'
+import laptop from '../assets/laptop.png'
 import console from '../assets/console.png'
+import tv from '../assets/tv.png'
+import keyboard from '../assets/keyboard.png'
 import Item from './Item'
 
 const JustForYou = () => {
@@ -20,48 +23,34 @@ const JustForYou = () => {
 
         <div className='flex flex-col md:flex-row items-center gap-x-4'>
             <Item
+            img={laptop}
+            alt='Gamepad'
+            name='ASUS FHD Gaming Laptop'
+            newPrice='$960'
+            oldPrice='$1160'
+            discount='35%'
+            ratings='65'/>
+            <Item
+            img={tv}
+            alt='Gamepad'
+            name='IPS LCD Gaming Monitor'
+            newPrice='$1160'
+            ratings='65'/>
+
+            <Item
             img={console}
             alt='Gamepad'
             name='HAVIT HV-G92 Gamepad'
-            newPrice='$120'
-            oldPrice='$160'
-            discount='40%'
-            ratings='88'/>
+            newPrice='$560'
+            ratings='65'/>
+
             <Item
-            img={console}
+            img={keyboard}
             alt='Gamepad'
             name='AK-900 Wired Keyboard'
-            newPrice='$120'
-            oldPrice='$160'
-            discount='40%'
-            ratings='88'/>
+            newPrice='$200'
+            ratings='65'/>
 
-            <Item
-            img={console}
-            alt='Gamepad'
-            name='IPS LCD Gaming Monitor'
-            newPrice='$120'
-            oldPrice='$160'
-            discount='40%'
-            ratings='88'/>
-
-            <Item
-            img={console}
-            alt='Gamepad'
-            name='S-Series Comfort Chair '
-            newPrice='$120'
-            oldPrice='$160'
-            discount='40%'
-            ratings='88'/>
-
-            <Item
-            img={console}
-            alt='Gamepad'
-            name='S-Series Comfort Chair '
-            newPrice='$120'
-            oldPrice='$160'
-            discount='40%'
-            ratings='88'/>
         </div>
 
         </div>
