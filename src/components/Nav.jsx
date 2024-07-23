@@ -4,8 +4,11 @@
     import cart from '../assets/cart.svg'
     import user from '../assets/user.svg'
     import { Link } from 'react-router-dom'
+    import { useSelector } from 'react-redux'
 
     const Nav = (props) => {
+        const cartItems = useSelector(state=> state.cart.cart)
+        const wishlistItems = useSelector(state=> state.wishlist.wishlist)
     return (
         <div className='border-b-2'>
         <div className='font-Poppins flex justify-center items-center gap-2 bg-black'>
@@ -41,11 +44,11 @@
     
             <Link to='/wishlist' className='relative'>
             <img src={like} alt="wishlist" width={'32px'} className='hover:cursor-pointer hover:bg-[#DB4444] hover:rounded-full p-1'/>
-            <p className='absolute top-0 right-0 rounded-full text-white px-0.5 bg-[#DB4444]'>{props.wish}</p>
+            <p className='absolute top-0 right-0 rounded-full text-white px-0.5 bg-[#DB4444]'>{wishlistItems.length}</p>
             </Link>
             <Link to='/cart' className='relative'>
              <img src={cart} alt="cart" width={'32px'} className='hover:cursor-pointer hover:bg-[#DB4444] hover:rounded-xl'/>
-             <p className='absolute top-0 right-0 rounded-full text-white px-0.5 bg-[#DB4444]'>{props.tobuy}</p>
+             <p className='absolute top-0 right-0 rounded-full text-white px-0.5 bg-[#DB4444]'>{cartItems.length}</p>
             </Link>
             <div className='group'>
              <img src={user} alt="account" width={'32px'} className='hover:cursor-pointer hover:bg-[#DB4444] hover:rounded-full'/>

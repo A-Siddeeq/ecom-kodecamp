@@ -9,14 +9,11 @@ import Ad from '../components/Ad'
 import OurProducts from '../components/OurProducts'
 import Featured from '../components/Featured'
 import Benefits from '../components/Benefits'
-import { useSelector } from 'react-redux'
 
 const Home = () => {
-  const cartItems = useSelector(state=> state.cart.cart)
-  const wishlistItems = useSelector(state=> state.wishlist.wishlist)
   return (
     <div className='w-full overflow-hidden'>
-         <Nav tobuy={cartItems.length} wish={wishlistItems.length}/>
+        <Nav />
         <Hero /> 
         <FlashSales /> 
         <Categories /> 
@@ -25,7 +22,7 @@ const Home = () => {
         <OurProducts /> 
         <Featured /> 
         <Benefits />
-         <Footer /> 
+        <Footer /> 
     </div>
   )
 }

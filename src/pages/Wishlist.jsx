@@ -1,28 +1,38 @@
 import React from 'react'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 import JustForYou from '../components/JustForYou'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeFromWishlist } from '../redux/slices/wishlistSlice'
+import { addToCart } from '../redux/slices/cartSlice'
 import bin from '../assets/bin.svg'
 import cart from '../assets/cart.svg'
 
 const Wishlist = () => {
-  const wishlistItems = useSelector(state => state.wishlist.wishlist)
+  const wishlistItems = useSelector((state) => state.wishlist.wishlist)
   const dispatch = useDispatch()
   return (
     <div>
-        {  wishlistItems.map((item, index) => {
+        <Nav />
+         <h1>Wishlist {`(${wishlistItems.length})`}</h1>
+        {  
+         wishlistItems.map((item, index) => {
                 return( 
-          <div className='h-[320px] w-[270px]' key={index}>
+          <div key={index} className='h-[320px] w-[270px]'>
 
         <div className='relative'>
             <div className='w-[40px] text-center absolute left-0 top-0 mt-2 rounded font-Poppins font-normal text-[12px] text-[#FAFAFA] bg-[#DB4444] leading-[18px]'>
             <p>-{item.discount}</p>
             </div>
         <img src={item.img} alt={item.alt} className='bg-[#F5F5F5] w-full h-[270px] p-4'/>
-        <div className='absolute right-0 top-0 p-2 flex flex-col gap-y-2'  onClick={() => dispatch(removeFromWishlist({ index }))}>
-            <img src={bin} alt="add to wishlist" width={'34px'} className='rounded-full bg-white p-2'/>
+        <div 
+            className='absolute right-0 top-0 p-2 flex flex-col gap-y-2'  
+            onClick={() => dispatch(removeFromWishlist({ index }))}>
+            <img src={bin} alt="add to wishlist" width={'34px'} className='rounded-full bg-white p-2'
+            />
         </div>
-        <div className='absolute bottom-0 flex gap-x-2 justify-center items-center text-center w-full bg-black rounded h-[41px]'>
+        <div className='absolute bottom-0 flex gap-x-2 justify-center items-center text-center w-full bg-black rounded h-[41px]'
+          onClick={() => dispatch(addToCart({ index }))}>
             <img src={cart} alt="Add to cart" />
             <p className='font-Poppins font-normal text-[12px] leading-[18px] text-white'>Add To Cart</p>
         </div>
@@ -44,6 +54,7 @@ const Wishlist = () => {
               }
               )}
         <JustForYou />
+        <Footer />
     </div>
   )
 }

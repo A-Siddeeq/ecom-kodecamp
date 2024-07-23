@@ -10,7 +10,7 @@
   const Footer = () => {
     return (
       <div className=' w-full bg-black text-white'>
-      <div className='flex flex-col justify-around items-start md:flex-row md:py-4'>
+      <div className='flex flex-col justify-around items-center md:items-start md:flex-row md:py-4'>
         
         <div className='flex flex-col gap-y-4'>
           <h1 className='font-Inter font-bold text-[24px] leading-[24px]'>Exclusive</h1>
@@ -52,7 +52,7 @@
         </ul>
       </div>
 
-      <div className='flex flex-col gap-y-3'>
+      <div className='flex flex-col items-center gap-y-3'>
         <h2 className='font-Poppins font-medium text-[20px] leading-[28px]'>Download App</h2>
         <div>
           <p className='font-Poppins font-normal text-[16px] leading-[24px]'>Save $3 with App New User Only</p>

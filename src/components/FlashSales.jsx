@@ -17,7 +17,7 @@ const FlashSales = () => {
         </div>
 
         <div className='flex justify-between'>
-          <div className='flex'>
+          <div className='flex gap-x-6'>
             <h1 className='font-Inter font-semibold text-[36px] leading-[48px]'>Flash Sales</h1>
             <div>days : hours : mins : secs</div>
           </div>
